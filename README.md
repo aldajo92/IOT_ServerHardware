@@ -24,13 +24,12 @@ Follow this guide for internal configuration:
 https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
 
 ### Raspberry pi configurations ###
-Inside terminal, use the following commands:
+Inside terminal, add the following commands:
 ```
 $ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 $ sudo apt install build-essential
 $ sudo apt install nodejs
 ```
-
 
 ### References ###
 [Arduino-driven respirators](https://oxygen.protofy.xyz/?fbclid=IwAR0D7q6lnGN5a0y0BUq7o6lQQd52dMpKpabMsKNzyUiXBwRLimnSg43lCMo)
