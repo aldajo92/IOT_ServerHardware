@@ -1,10 +1,22 @@
-var express = require('express');
-var app = express();
+var sp = require('./SerialPort')
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
+const portName = "/dev/cu.usbmodem14401"
+const baudRate = 9600
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+const portParams = { portName, baudRate }
+
+sp.initSerialPort(portParams, () => { console.log("open!") }, errorport)
+sp.addCallback((data) => {
+    console.log(data);
+})
+
+setTimeout(() => {
+    sp.closeSerialPort();
+}, 5000);
+
+var errorport = (err) => {
+    if (err) {
+        console.log('Error: ', err.message)
+        process.exit()
+    }
+}
