@@ -1,0 +1,6 @@
+{
+    "port": "/dev/cu.usbmodem14401",
+    "programmer": "AVRISP mkII",
+    "board": "arduino:avr:uno",
+    "sketch": "arduino/serial_mock/serial_mock.ino"
+}
