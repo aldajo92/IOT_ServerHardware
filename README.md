@@ -33,6 +33,7 @@ $ sudo apt git
 
 ### Usage ###
 Follow [index.js](server/index.js) as the main example. Use [SerialPort.js](server/SerialPort.js) for your own implementation.
+Check the port name in `/dev/` and replace in index.js.
 
 An arduino code [serial_mock.ino](/arduino/serial_mock/serial_mock.ino) is provided for mock data and test your code.
 
