@@ -34,6 +34,8 @@ $ sudo apt git
 ### Usage ###
 Follow [index.js](server/index.js) as the main example. Use [SerialPort.js](server/SerialPort.js) for your own implementation.
 
+An arduino code [serial_mock.ino](/arduino/serial_mock/serial_mock.ino) is provided for mock data and test your code.
+
 ### How to run ###
 ```
 $ git clone https://github.com/aldajo92/server_hardware.git
